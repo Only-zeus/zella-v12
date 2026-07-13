@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,18 +19,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Zella AI" }],
   creator: "Zella AI",
-  manifest: "/manifest.json",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-};
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  viewportFit: "cover",
+  viewport:
+    "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover",
+
   themeColor: "#050607",
 };
 
